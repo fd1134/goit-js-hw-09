@@ -2,7 +2,7 @@ import "../init";
 // Kullanılacak kısmın import edilmesi
 import SimpleLightbox from "simplelightbox";
 // Ek stillerin eklenmesi
-import "simplelightbox/dist/simple-lightbox.min.css";
+import "../../node_modules/simplelightbox/dist/simple-lightbox.min.css";
 
 const gallery = document.querySelector(".gallery");
 const images = [
