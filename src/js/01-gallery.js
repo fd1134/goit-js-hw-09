@@ -1,8 +1,7 @@
 import "../init.js";
 // Kullanılacak kısmın import edilmesi
-import SimpleLightbox from "../../node_modules/simplelightbox/dist/simple-lightbox.esm";
-// Ek stillerin eklenmesi
-import "../../node_modules/simplelightbox/dist/simple-lightbox.min.css";
+import SimpleLightbox from "../../node_modules/simplelightbox/dist/simple-lightbox.esm.js";
+
 
 const gallery = document.querySelector(".gallery");
 const images = [
