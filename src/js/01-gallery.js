@@ -1,6 +1,6 @@
 import "../init";
 // Kullanılacak kısmın import edilmesi
-import SimpleLightbox from "simplelightbox";
+import SimpleLightbox from "../../node_modules/simplelightbox/dist/simple-lightbox.esm";
 // Ek stillerin eklenmesi
 import "../../node_modules/simplelightbox/dist/simple-lightbox.min.css";
 
