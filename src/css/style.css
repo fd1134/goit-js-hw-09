@@ -1,18 +1,75 @@
-ul {
-  list-style-type: none;
+
+
+/* Navbar genel stil */
+.navbar {
+  background-color: #333;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
 }
-img {
-  width: 100%;
-  display: block;
+
+/* Liste stilleri */
+.navbar-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Liste öğeleri */
+.navbar-item {
+  margin: 0 15px;
+}
+
+/* Link stilleri */
+.navbar-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-link:hover {
+  background-color: #555;
+  color: #ffcc00;
 }
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding: auto 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Her satırda 3 sütun */
+  gap: 15px; /* Öğeler arasındaki boşluk */
+  padding: 0;
+  margin: 20px auto;
+  list-style: none;
+  max-width: 1200px; /* Galerinin genişliği */
 }
+
+/* Galeri Öğesi */
 .gallery-item {
-  flex: 1 1 calc(33.33% - 60px);
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Resim */
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s;
+}
+
+.gallery-item:hover .gallery-image {
+  opacity: 0.9;
 }
 .feedback-form {
   max-width: 400px;
